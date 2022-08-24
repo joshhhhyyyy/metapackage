@@ -27,10 +27,8 @@ jobs:
           check-latest: true
       - name: get dependencies
         run : |
-          go get github.com/goreleaser/nfpm/v2/cmd/nfpm
-          go install github.com/goreleaser/nfpm/v2/cmd/nfpm
-          go get github.com/joshhhhyyyy/increment
-          go install github.com/joshhhhyyyy/increment
+          go install github.com/goreleaser/nfpm/v2/cmd/nfpm@latest
+          go install github.com/joshhhhyyyy/increment@latest
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v4
         with:
